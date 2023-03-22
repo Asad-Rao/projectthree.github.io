@@ -105,7 +105,8 @@
 
 /*****************************************************************/
 .sectionone {
-  padding-block: 25px;
+  padding-block-end: 12.5px;
+  padding-block-start: 25px;
 }
 .sectononerow {
   display: flex;
@@ -180,6 +181,12 @@
   margin: auto;
 }
 
+.section_two {
+  padding-block-end: 12.5px;
+}
+/************************Section Two MEDIA QUERY**************************/
+
+/*************************************************************************/
 .sectionfourrow {
   display: flex;
   flex-direction: row;
@@ -190,11 +197,13 @@
 .sectionfourrowimagediv {
   width: 100%;
 }
+.smalltext_div {
+  padding-block: 12px;
+}
 .smalltext {
   color: #121723;
   font-family: Poppins-SemiBold;
-  font-size: 9px;
-  padding-block: 9px;
+  font-size: 11px;
   text-decoration: none;
 }
 .discover_more_section_four {
@@ -210,9 +219,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
 }
-
+/**************************SECTION EIGHT HOME PAGE MEDIA QUERY*********/
+@media screen and (max-width: 767px) {
+  .sectioneightcol {
+    width: 100%;
+    padding-inline: 40px;
+    margin-block: 20px;
+    text-align: center;
+  }
+  .section_eight_heading {
+    text-align: center;
+    width: 59%;
+    margin: auto;
+  }
+}
 .shopnowcoltwo {
   float: right;
   font-family: Poppins-SemiBold;
@@ -232,9 +255,45 @@
 .rightproducttext {
   color: #121723;
   font-family: Poppins-Bold;
+  padding-block-end: 25px;
 }
 
+.section_three {
+  padding-block: 12.5px;
+}
+/*****************************MEDIA QUERY FOR SECTION TWO*****************/
+@media screen and (max-width: 767px) {
+  .rightproducttext {
+    text-align: center;
+    margin: auto;
+    width: 59%;
+    padding-block-end: 0px !important;
+  }
+  .cabinetcol {
+    width: 100%;
+    text-align: center;
+    padding-inline: 40px;
+    margin-block: 20px;
+  }
+}
 /***********************************************************/
+
+/***************************SECTION 3 HOME PAGE MEDIA QUERY**************/
+@media screen and (max-width: 767px) {
+  .section_three {
+    padding-block-end: 25px;
+  }
+  .ulcoldiv {
+    width: 100%;
+    text-align: center;
+    margin-block-end: 20px;
+    padding-inline: 40px;
+  }
+}
+/**************************************************************************/
+.section_four {
+  padding-block: 12.5px;
+}
 .sectionfourcol {
   background-color: #f7f7f7;
 }
@@ -249,7 +308,7 @@
   color: #000000;
   font-family: Poppins-Bold;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
 }
 .image-text-div {
   padding-block: 20px;
@@ -258,20 +317,26 @@
 .uldiv {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .ulheading {
-  font-family: Poppins-SemiBold;
+  font-family: Poppins-Bold;
   font-size: 13px;
 }
 ul {
   list-style: none;
 }
 .ulsectionthree {
-  font-size: 8px;
+  font-size: 11px;
   padding-block: 2px;
 }
 .li-items-section-three {
   padding-block: 2px;
+}
+
+/************************Section Six Home Page CSS**********************/
+.section_six {
+  padding-block: 12.5px;
 }
 .section-six-icon-row {
   display: flex;
@@ -297,10 +362,25 @@ ul {
 .icon-text-div {
   padding-block: 10px;
 }
+/*************Section Six Home Page  Media Query************************/
+@media screen and (max-width: 767px) {
+  .section-six-icon-col {
+    width: 100%;
+    text-align: center;
+    padding-inline: 40px;
+    margin-block: 20px;
+  }
+  .icon-image-div {
+    margin: auto;
+  }
+}
+
+/************************************************************************/
 .section_eight_heading {
-  font-family: Poppins-SemiBold;
-  font-size: 14px;
+  font-family: Poppins-Bold;
+  font-size: 17px;
   color: #121723;
+  margin-block-end: 20px;
 }
 .section-eight-col-heading {
   font-family: Poppins-SemiBold;
@@ -310,7 +390,12 @@ ul {
 .section-eight-text-div {
   padding-block: 10px;
 }
-/************************************Section#9-CSS********************/
+/************************************Section#9_Home Page_CSS****************/
+.maltica_section_nine_new_heading {
+  color: #121723;
+  font-family: Poppins-Bold;
+  font-size: 17px;
+}
 .section_nine_row {
   display: flex;
   justify-content: space-between;
@@ -340,7 +425,11 @@ ul {
   font-size: 11px;
 }
 
-/*************************Section five CSS***************************/
+/*************************Section Five Home_Page CSS*********************/
+.section_five {
+  padding-block: 12.5px;
+}
+
 .section_five_row {
   display: flex;
   justify-content: space-between;
@@ -353,7 +442,7 @@ ul {
 }
 .section_five_col_heading {
   color: white;
-  font-family: Poppins-SemiBold;
+  font-family: Poppins-Bold;
   font-size: 13px;
 }
 .section_five_col_small_text {
@@ -391,7 +480,14 @@ ul {
   color: #ffffff;
 }
 
-/****************************Section_Seven_CSS************************/
+/****************************Section_Seven_Home Page_CSS******************/
+.section_seven {
+  padding-block: 12.5px;
+}
+.section_seven_div {
+  margin-block: 20px;
+}
+
 .section_seven_column_one {
   background-image: url('images/Layer40editedimage.PNG');
   background-size: cover;
@@ -731,7 +827,7 @@ input[type='email'] {
   background-image: url('images/malticanews_section_one_background.PNG');
   background-repeat: no-repeat no-repeat;
   background-size: cover;
-  margin-block: 34px;
+  margin-block-start: 34px;
 }
 .news_section_one_div {
   padding-block: 75px;
@@ -771,6 +867,9 @@ input[type='email'] {
 .section_nine_col_heading {
   margin-block: 8px;
   font-size: 15px;
+}
+.section_nine_row_div {
+  margin-block: 34px;
 }
 /*******************************MEDIA QUERY FOR THE MALTICA NEWS**********/
 @media screen and (max-width: 767px) {
